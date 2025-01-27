@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate - Coming Soon</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        min-height: 100vh;
+        min-width: 100vw;
+        display: flex;
+        align-items: center;
+        font-family: "Arial", sans-serif;
+        position: relative;
+        background-image: url("bg-7.jpg");
+        background-size: cover;
+      }
+
+      /* Overlay */
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(
+          135deg,
+          rgba(0, 0, 0, 0.9),
+          rgba(212, 175, 55, 0.188)
+        );
+        z-index: 1;
+      }
+
+      main.coming-soon {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+      }
+
+      .coming-soon-card {
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 20px;
+        padding: 3rem;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      }
+
+      .logo {
+        max-width: 200px;
+        margin-bottom: 2rem;
+      }
+
+      .gold-text {
+        color: #d4af37;
+      }
+
+      .social-icons a {
+        color: #d4af37;
+        margin: 0 10px;
+        font-size: 1.5rem;
+        transition: all 0.3s ease;
+      }
+
+      .social-icons a:hover {
+        color: #ffffff;
+        transform: translateY(-3px);
+      }
+
+      .contact-info {
+        color: #cccccc;
+        font-size: 0.9rem;
+      }
+
+      .contact-info i {
+        color: #d4af37;
+        margin-right: 8px;
+      }
+
+      /* Added responsiveness for contact info */
+      @media (max-width: 768px) {
+        .contact-info p {
+          font-size: 0.8rem;
+          word-break: break-word;
+        }
+        .coming-soon-card {
+          padding: 2rem;
+          margin: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="coming-soon">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="coming-soon-card text-center text-white">
+              <img src="logo.png" alt="Logo" class="logo" />
+              <h1 class="display-4 mb-4 gold-text fw-bold">Coming Soon</h1>
+              <p class="lead mb-5">
+                We’re building something special. Soon, you’ll experience a
+                simpler, smarter way to find your next property!
+              </p>
+
+              <div class="contact-info mb-5">
+                <p class="mb-2">
+                  <i class="fas fa-map-marker-alt"></i> The 5th Avenue Real
+                  Estate <br />
+                  Waterman Business Centre, Chadstone VIC 3168
+                </p>
+                <p class="mb-2">
+                  <i class="fas fa-phone"></i>(+61) 0455 474 220
+                </p>
+                <p class="mb-2">
+                  <i class="fas fa-envelope"></i
+                  >randy.navaratne@the5thavenue.com.au
+                </p>
+              </div>
+
+              <div class="social-icons">
+                <a
+                  href="https://www.facebook.com/5thavenueRealEstate?_rdc=2&_rdr#"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/randy-navaratne-70021310/?originalSubdomain=au"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
